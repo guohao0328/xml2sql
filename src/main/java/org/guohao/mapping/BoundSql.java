@@ -18,9 +18,9 @@ package org.guohao.mapping;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.apache.ibatis.reflection.MetaObject;
-import org.apache.ibatis.reflection.property.PropertyTokenizer;
-import org.apache.ibatis.session.Configuration;
+import org.guohao.Configuration;
+import org.guohao.reflection.MetaObject;
+import org.guohao.reflection.property.PropertyTokenizer;
 
 /**
  * An actual SQL String got from an {@link SqlSource} after having processed any dynamic content.

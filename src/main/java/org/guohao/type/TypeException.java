@@ -15,7 +15,6 @@
  */
 package org.guohao.type;
 
-
 /**
  * @author Clinton Begin
  */

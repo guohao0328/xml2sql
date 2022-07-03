@@ -28,8 +28,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
-import org.apache.ibatis.io.ResolverUtil;
-import org.apache.ibatis.io.Resources;
+import org.guohao.io.ResolverUtil;
 import org.guohao.io.Resources;
 
 /**

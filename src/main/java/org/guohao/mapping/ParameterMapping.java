@@ -16,10 +16,10 @@
 package org.guohao.mapping;
 
 import java.sql.ResultSet;
-import org.apache.ibatis.session.Configuration;
-import org.apache.ibatis.type.JdbcType;
-import org.apache.ibatis.type.TypeHandler;
-import org.apache.ibatis.type.TypeHandlerRegistry;
+import org.guohao.Configuration;
+import org.guohao.type.JdbcType;
+import org.guohao.type.TypeHandler;
+import org.guohao.type.TypeHandlerRegistry;
 
 /**
  * @author Clinton Begin

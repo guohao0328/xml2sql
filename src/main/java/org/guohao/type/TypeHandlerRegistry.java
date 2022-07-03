@@ -42,10 +42,9 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
-import org.apache.ibatis.binding.MapperMethod.ParamMap;
-import org.apache.ibatis.io.ResolverUtil;
-import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.Configuration;
+import org.guohao.Configuration;
+import org.guohao.io.ResolverUtil;
+import org.guohao.io.Resources;
 
 /**
  * @author Clinton Begin
@@ -180,7 +179,7 @@ public final class TypeHandlerRegistry {
 
   /**
    * Set a default {@link TypeHandler} class for {@link Enum}.
-   * A default {@link TypeHandler} is {@link org.apache.ibatis.type.EnumTypeHandler}.
+   * A default {@link TypeHandler} is {@link EnumTypeHandler}.
    * @param typeHandler a type handler class for {@link Enum}
    * @since 3.4.5
    */
@@ -230,9 +229,6 @@ public final class TypeHandlerRegistry {
 
   @SuppressWarnings("unchecked")
   private <T> TypeHandler<T> getTypeHandler(Type type, JdbcType jdbcType) {
-    if (ParamMap.class.equals(type)) {
-      return null;
-    }
     Map<JdbcType, TypeHandler<?>> jdbcHandlerMap = getJdbcHandlerMap(type);
     TypeHandler<?> handler = null;
     if (jdbcHandlerMap != null) {
